@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Gateway do
+defmodule CelestialProtocol.Decoder.Gateway do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def nos0575(combinator \\ empty()) do
     combinator

@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Battle do
+defmodule CelestialProtocol.Decoder.Battle do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def mtlist(combinator \\ empty()) do
     combinator

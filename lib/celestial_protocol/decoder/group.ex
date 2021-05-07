@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Group do
+defmodule CelestialProtocol.Decoder.Group do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def guri(combinator \\ empty()) do
     combinator

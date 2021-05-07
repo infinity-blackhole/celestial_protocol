@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Client do
+defmodule CelestialProtocol.Decoder.Client do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def c_close(combinator \\ empty()) do
     combinator

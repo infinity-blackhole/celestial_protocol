@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Network do
+defmodule CelestialProtocol.Decoder.Network do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def mz(combinator \\ empty()) do
     combinator

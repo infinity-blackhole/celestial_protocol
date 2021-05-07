@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Mall do
+defmodule CelestialProtocol.Decoder.Mall do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def mall(combinator \\ empty()) do
     combinator

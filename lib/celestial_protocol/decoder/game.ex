@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Game do
+defmodule CelestialProtocol.Decoder.Game do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def game_start(combinator \\ empty()) do
     combinator

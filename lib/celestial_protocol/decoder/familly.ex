@@ -1,7 +1,7 @@
-defmodule CelestialProtocol.Familly do
+defmodule CelestialProtocol.Decoder.Familly do
   import NimbleParsec
-  import CelestialProtocol.Helpers
-  import CelestialProtocol.Inventory
+  import CelestialProtocol.Decoder.Helpers
+  import CelestialProtocol.Decoder.Inventory
 
   def glmk(combinator \\ empty()) do
     combinator

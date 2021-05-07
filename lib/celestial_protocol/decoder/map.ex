@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Map do
+defmodule CelestialProtocol.Decoder.Map do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def dir(combinator \\ empty()) do
     combinator

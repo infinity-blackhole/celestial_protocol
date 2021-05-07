@@ -1,7 +1,7 @@
-defmodule CelestialProtocol.Lobby do
+defmodule CelestialProtocol.Decoder.Lobby do
   import NimbleParsec
-  import CelestialProtocol.Helpers
-  import CelestialProtocol.Entity
+  import CelestialProtocol.Decoder.Helpers
+  import CelestialProtocol.Decoder.Entity
 
   def char_new(combinator \\ empty()) do
     combinator
@@ -11,7 +11,7 @@ defmodule CelestialProtocol.Lobby do
     |> ignore(separator())
     |> field(alphanum(), :character)
     |> ignore(separator())
-    |> field(character_sexe(), :character_sex)
+    |> field(character_sex(), :character_sex)
     |> ignore(separator())
     |> field(character_hair_style(), :character_hair_style)
     |> ignore(separator())

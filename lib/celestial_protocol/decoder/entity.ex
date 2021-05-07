@@ -1,8 +1,7 @@
-defmodule CelestialProtocol.Entity do
+defmodule CelestialProtocol.Decoder.Entity do
   import NimbleParsec
-  import CelestialProtocol.Helpers
 
-  def character_sexe(combinator \\ empty()) do
+  def character_sex(combinator \\ empty()) do
     choice(combinator, [
       string("0") |> replace(:male),
       string("1") |> replace(:female)

@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Miniland do
+defmodule CelestialProtocol.Decoder.Miniland do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def addobj(combinator \\ empty()) do
     combinator

@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Social do
+defmodule CelestialProtocol.Decoder.Social do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def blins(combinator \\ empty()) do
     combinator

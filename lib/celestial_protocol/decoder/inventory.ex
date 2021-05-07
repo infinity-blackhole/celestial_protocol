@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Inventory do
+defmodule CelestialProtocol.Decoder.Inventory do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def b_i(combinator \\ empty()) do
     combinator

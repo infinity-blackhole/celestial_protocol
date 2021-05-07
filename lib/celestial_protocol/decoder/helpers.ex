@@ -1,4 +1,4 @@
-defmodule CelestialProtocol.Helpers do
+defmodule CelestialProtocol.Decoder.Helpers do
   import NimbleParsec
 
   def id(combinator \\ empty()) do

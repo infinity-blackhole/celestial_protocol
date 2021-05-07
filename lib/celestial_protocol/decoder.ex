@@ -1,7 +1,7 @@
 defmodule CelestialProtocol.Decoder do
   import NimbleParsec
 
-  import CelestialProtocol.{
+  import CelestialProtocol.Decoder.{
     Helpers,
     Bazaar,
     Battle,

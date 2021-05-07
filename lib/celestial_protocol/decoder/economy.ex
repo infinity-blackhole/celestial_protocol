@@ -1,6 +1,6 @@
-defmodule CelestialProtocol.Economy do
+defmodule CelestialProtocol.Decoder.Economy do
   import NimbleParsec
-  import CelestialProtocol.Helpers
+  import CelestialProtocol.Decoder.Helpers
 
   def exc_list(combinator \\ empty()) do
     combinator
